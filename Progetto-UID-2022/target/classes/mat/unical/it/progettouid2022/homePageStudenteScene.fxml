@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mat.unical.it.progettouid2022.controller.homePageStudenteController">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <AnchorPane fx:id="InformazioniStudente" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <LineChart fx:id="weightedAverageChart" prefHeight="300.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="numberAxis" autoRanging="false" forceZeroInRange="false" lowerBound="18.0" minorTickLength="1.0" minorTickVisible="false" side="LEFT" tickLabelGap="4.0" tickLength="0.0" tickMarkVisible="false" tickUnit="1.0" upperBound="30.0" />
+              </yAxis>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </LineChart>
+         </center>
+         <bottom>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="100.0" prefWidth="250.0">
+                           <children>
+                              <Label fx:id="labelMedia" alignment="TOP_LEFT" prefWidth="250.0" text="Media ponderata" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="weightedAverage" alignment="TOP_LEFT" prefWidth="250.0" text="24.5">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <Label fx:id="labelCfu" alignment="TOP_LEFT" prefWidth="250.0" text="CFU acquisiti">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <ProgressBar fx:id="cfuProgressBar" prefHeight="18.0" prefWidth="225.0" progress="0.0" style="-fx-border-radius: 50;">
+                                 <VBox.margin>
+                                    <Insets right="50.0" />
+                                 </VBox.margin>
+                                 <opaqueInsets>
+                                    <Insets right="10.0" />
+                                 </opaqueInsets>
+                              </ProgressBar>
+                              <Label fx:id="cfuLabel" alignment="TOP_LEFT" prefWidth="250.0" text="100/180">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="150.0" prefWidth="310.0">
+                           <children>
+                              <Label fx:id="nextExamsLabel" alignment="CENTER" prefHeight="17.0" prefWidth="310.0" text="Prossimi esami">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ScrollPane fx:id="scrollPane" prefHeight="175.0" prefWidth="310.0">
+                                 <content>
+                                    <VBox fx:id="box" prefHeight="178.0" prefWidth="294.0" />
+                                 </content></ScrollPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </center>
+            </BorderPane>
+         </bottom>
+      </BorderPane>
+   </center>
+   <left>
+      <AnchorPane fx:id="menuRoot" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

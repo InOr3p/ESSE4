@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbox" prefHeight="1225.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mat.unical.it.progettouid2022.controller.scrollChartsController">
+   <children>
+      <Label prefWidth="400.0" text="Andamento voti">
+         <VBox.margin>
+            <Insets left="50.0" top="20.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <LineChart fx:id="votesChart" prefHeight="200.0" prefWidth="400.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis autoRanging="false" forceZeroInRange="false" lowerBound="18.0" side="LEFT" tickUnit="2.0" upperBound="30.0" />
+               </yAxis>
+            </LineChart>
+         </children>
+      </AnchorPane>
+      <Button fx:id="votesDownloadButton" mnemonicParsing="false" onMouseClicked="#votesDownloadClicked" style="-fx-background-color: transparent;">
+         <VBox.margin>
+            <Insets left="500.0" />
+         </VBox.margin>
+      </Button>
+      <Label prefWidth="400.0" text="Andamento media">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="50.0" top="30.0" />
+         </VBox.margin>
+      </Label>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <LineChart fx:id="averageChart" prefHeight="200.0" prefWidth="400.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis autoRanging="false" forceZeroInRange="false" lowerBound="18.0" side="LEFT" tickUnit="2.0" upperBound="30.0" />
+               </yAxis>
+            </LineChart>
+         </children>
+      </AnchorPane>
+      <Button fx:id="averageDownloadButton" mnemonicParsing="false" onMouseClicked="#averageDownloadClicked" style="-fx-background-color: transparent;">
+         <VBox.margin>
+            <Insets left="500.0" />
+         </VBox.margin>
+      </Button>
+      <Label prefWidth="400.0" text="Distribuzione voti">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="50.0" top="30.0" />
+         </VBox.margin>
+      </Label>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BarChart fx:id="voteDistrChart" prefHeight="200.0" prefWidth="400.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0">
+               <xAxis>
+                  <CategoryAxis fx:id="distrVotesXAxis" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis fx:id="distrVotesYAxis" autoRanging="false" forceZeroInRange="false" side="LEFT" tickUnit="1.0" upperBound="0.0" />
+               </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+      <Button fx:id="votesDistrDownloadButton" mnemonicParsing="false" onMouseClicked="#votesDistrDownloadsClicked" style="-fx-background-color: transparent;">
+         <VBox.margin>
+            <Insets left="500.0" />
+         </VBox.margin>
+      </Button>
+      <Label prefWidth="400.0" text="Distribuzione CFU">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="50.0" top="30.0" />
+         </VBox.margin>
+      </Label>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BarChart fx:id="cfuDistrChart" prefHeight="200.0" prefWidth="400.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis fx:id="distrCfuYAxis" autoRanging="false" forceZeroInRange="false" side="LEFT" />
+               </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+      <Button fx:id="cfuDownloadButton" mnemonicParsing="false" onMouseClicked="#cfuDownloadClicked" style="-fx-background-color: transparent;">
+         <VBox.margin>
+            <Insets left="500.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

@@ -1,0 +1,9 @@
+{
+  "collections": [
+    {
+      "name": "studente",
+      "read": ["auth"],
+      "write": ["auth"]
+    }
+    ]
+}

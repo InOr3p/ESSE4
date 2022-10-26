@@ -1,0 +1,161 @@
+.label{
+    -fx-text-fill: primaryColor;
+}
+
+.importantLabel{
+    -fx-text-fill: primaryColor;
+    -fx-font-weight: bold;
+}
+
+.button{
+    -fx-background-color: secondaryBackgroundColor;
+    -fx-text-fill: secondaryColor;
+}
+
+.button:hover{
+    -fx-background-color: hoverColor;
+}
+
+.iconButton{
+    -fx-fill: white;
+}
+
+.pane{
+    -fx-background-color: linear-gradient(to bottom right,backgroundColor, gradientColor);
+}
+
+.hyperlink{
+    -fx-text-fill: primaryColor;
+}
+
+.progress-bar{
+    -fx-accent: primaryColor;
+    -fx-background-color: transparent;
+}
+.progress-bar > .track{
+    -fx-text-box-border: secondaryBackgroundColor;
+    -fx-control-inner-background: secondaryBackgroundColor;
+}
+
+.chart-plot-background{
+    -fx-background-color: secondaryBackgroundColor;
+}
+.chart-vertical-grid-lines{
+    -fx-stroke: transparent;
+}
+.chart-legend{
+    -fx-background-color: secondaryBackgroundColor;
+}
+.chart-legend-item{
+    -fx-text-fill: secondaryColor;
+}
+.axis {
+    -fx-tick-label-fill: secondaryColor;
+}
+.examLabel{
+    -fx-background-color: secondaryBackgroundColor;
+}
+.examLabel:hover{
+    -fx-background-color: hoverColor;
+}
+.vbox{
+    -fx-background-color: backgroundColor;
+    -fx-border-color: backgroundColor;
+}
+.scroll-pane{
+    -fx-background-color: backgroundColor;
+    -fx-border-color: backgroundColor;
+}
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color: backgroundColor;
+}
+.scroll-bar:horizontal .thumb, .scroll-bar:vertical .thumb{
+    -fx-background-color: secondaryBackgroundColor;
+}
+.scroll-pane > .corner{
+    -fx-background-color: backgroundColor;
+}
+
+.nextExamLabel{
+    -fx-background-color: secondaryBackgroundColor;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+.nextExamLabel:hover{
+    -fx-background-color: hoverColor;
+}
+.table-view{
+    -fx-background-color: secondaryBackgroundColor;
+    -fx-border-color: secondaryBackgroundColor;
+    -fx-table-cell-border-color: transparent;
+}
+.table-view .corner {
+    -fx-background-color: backgroundColor;
+}
+.table-view .column-header{
+    -fx-background-color: hoverColor;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: secondaryColor;
+}
+.table-row-cell:odd{
+    -fx-background-color: backgroundColor;
+}
+.table-row-cell:even{
+    -fx-background-color: secondaryBackgroundColor;
+}
+.table-row-cell:even:hover, .table-row-cell:odd:hover{
+    -fx-background-color: hoverColor;
+}
+
+.separator *.line{
+    -fx-background-color: primaryColor;
+    -fx-border-color: primaryColor;
+    -fx-border-width: 1px;
+}
+
+.textFieldAccount{
+    -fx-background-color: transparent;
+    -fx-text-fill: secondaryColor;
+}
+
+.textFieldAccount2{
+    -fx-text-fill: black;
+    -fx-background-color: white;
+}
+
+.textArea {
+    -fx-background-color: transparent;
+    -fx-text-fill: secondaryColor;
+}
+
+.textArea .scroll-pane {
+    -fx-background-color: transparent;
+    -fx-text-fill: secondaryColor;
+}
+
+.textArea .scroll-pane .viewport{
+    -fx-background-color: transparent;
+    -fx-text-fill: secondaryColor;
+}
+
+
+.textArea .scroll-pane .content{
+    -fx-background-color: transparent;
+    -fx-text-fill: secondaryColor;
+}
+
+.dialog-pane{
+    -fx-background-color: backgroundColor;
+    -fx-text-fill: secondaryColor;
+}
+
+.dialog-pane *.header-panel{
+    -fx-background-color: backgroundColor;
+    -fx-text-fill: secondaryColor;
+}
+
+.Hbox{
+    -fx-background-color: secondaryBackgroundColor;
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mat.unical.it.progettouid2022.controller.statsSceneController">
+   <left>
+      <AnchorPane fx:id="menuRoot" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <AnchorPane prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="maxMediaLabel" layoutX="31.0" layoutY="24.0" text="Media ponderata massima: ">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="minMediaLabel" layoutX="31.0" layoutY="60.0" text="Media ponderata minima: ">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="maxAverage" layoutX="259.0" layoutY="24.0" text="29.5">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="minAverage" layoutX="259.0" layoutY="60.0" text="18.98">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="maxBaseLaurea" layoutX="333.0" layoutY="24.0" text="Base massima laurea: ">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="maxGraduation" layoutX="516.0" layoutY="24.0" text="114.25">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="minBaseLaurea" layoutX="333.0" layoutY="60.0" text="Base minima laurea: ">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="minGraduation" layoutX="516.0" layoutY="60.0" text="29.5">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <ScrollPane fx:id="chartsRoot" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

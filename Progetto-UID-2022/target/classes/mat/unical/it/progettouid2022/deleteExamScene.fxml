@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mat.unical.it.progettouid2022.controller.deleteExamPageController">
+   <children>
+      <TableView fx:id="examTable" layoutX="14.0" layoutY="50.0" prefHeight="370.0" prefWidth="460.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="60.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="230.0" resizable="false" text="Nome" />
+          <TableColumn fx:id="cfuColumn" prefWidth="60.0" resizable="false" text="CFU" />
+            <TableColumn fx:id="voteColumn" prefWidth="60.0" resizable="false" text="VOTO" />
+            <TableColumn fx:id="dateColumn" prefWidth="120.0" resizable="false" text="Data" />
+        </columns>
+      </TableView>
+      <Label text="Elimina esame" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="407.0" layoutY="460.0" mnemonicParsing="false" onMouseClicked="#confirmButtonClicked" text="Conferma" />
+      <Button layoutX="334.0" layoutY="460.0" mnemonicParsing="false" onMouseClicked="#cancelButtonClicked" text="Annulla" />
+   </children>
+</AnchorPane>

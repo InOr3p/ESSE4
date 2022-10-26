@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mat.unical.it.progettouid2022.controller.registerPageController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="170.0" layoutX="165.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photos/Esse4.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="60.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="60.0" prefWidth="250.0" text="Nome" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <TextField fx:id="nomeField" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="14.5" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="210.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="54.0" prefWidth="250.0" text="Cognome" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <TextField fx:id="cognomeField" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="14.5" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="54.0" prefWidth="200.0" text="Matricola" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <TextField fx:id="matricolaField" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="14.5" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="410.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="54.0" prefWidth="200.0" text="Università" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <TextField fx:id="uniField" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="14.5" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="460.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="54.0" prefWidth="200.0" text="Corso di Studio" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <TextField fx:id="cdsField" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="14.5" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="490.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="54.0" prefWidth="200.0" text="Anno" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <TextField fx:id="annoField" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="14.5" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="510.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="54.0" prefWidth="200.0" text="Email" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <TextField fx:id="emailField" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="14.5" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="524.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="54.0" prefWidth="200.0" text="Password" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <PasswordField fx:id="passwordField" alignment="CENTER" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="14.5" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="535.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="54.0" prefWidth="200.0" text="Conferma password" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <PasswordField fx:id="checkPasswordField" alignment="CENTER" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="14.5" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="100.0" prefWidth="250.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="54.0" prefWidth="200.0" text="Foto" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="fotoViewer" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@photos/FotoProva.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="150.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#loadButtonClicked" text="Carica" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="37.5" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <HBox layoutX="146.0" prefHeight="100.0" prefWidth="174.0" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="17.5">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#backButtonClicked" text="Indietro" AnchorPane.leftAnchor="180.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="250.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#registerButtonClicked" text="Registrati" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
